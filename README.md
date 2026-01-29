@@ -12,7 +12,9 @@ once you have set up the neo4j enviroment and connected to the database, just pa
 There will be multiple different types of outputs that are viewable
 
 Graph
-- Shows the relationships between nodes
-Table
-RAW
+- Shows the relationships between nodes<br>
+
+Table<br>
+
+RAW<br>
 - shows json query info and json return data from the database
