@@ -1,3 +1,8 @@
+Install the neo4j desktop interface from https://neo4j.com/ <br>
+once downloaded, open the interface and set up a remote connection, using 'reccomendations', for the database name, user, and password
+
+
+<br><br>
 PROFILE MATCH (p:Person)-[:DIRECTED]->(m:Movie)<-[:ACTED_IN]-(p) RETURN p.name,m.title ORDER BY p.name, m.title <br><br>
 SECOND ONE DOESNT WORK IN CURRENT STATE <br><br>
 PROFILE MATCH (a:Person)-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(b:Person) WHERE elementId(a) < elementId(b) WITH a, b, count(m) AS moviesTogether, collect(m.title)[0..10] As sampleMovieTitles WHERE moviesTogether > 1 RETURN a.name AS actor1, b.name as actor2, moviesTogether, sampleMovieTitles ORDER BY moviesTogether DESC, actor1, actor2 <br><br>
